@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
  *	main - print byres variables
- *	Return: Always 0 (Succsess)	
- *	*/
+ *	Return: Always 0 (Succsess)
+ */
 	int main(void)
-{	
+{
 	char character;
 	int inter;
 	long int long_inter;
 	long long int inter_64;
-	float simple_decimal; 
+	float simple_decimal;
 		char character;
 		long int long_inter;
 		long long int inter_64;
