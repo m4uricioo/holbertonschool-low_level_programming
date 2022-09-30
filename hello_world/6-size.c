@@ -3,6 +3,7 @@
  *	main - print byres variables
  *	Return: Always 0 (Succsess)
  */
+
 	int main(void)
 {
 	char character;
