@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#inculde <stdio.h>
 /**
  * more headers goes there
  *
