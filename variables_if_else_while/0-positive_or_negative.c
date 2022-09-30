@@ -3,7 +3,8 @@
 #include <stdio.h>
 /**
  * main - assign a random number to the variable
- * Return: 0
+ *
+ *  Return: 0
  */
 int main(void)
 {
@@ -16,4 +17,5 @@ int main(void)
 			printf("%i is negative\n", n);
 		else
 			printf("%i is zero\n", n);
+		return (0);
 }
