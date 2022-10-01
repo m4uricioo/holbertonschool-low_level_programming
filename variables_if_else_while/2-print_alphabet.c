@@ -1,9 +1,19 @@
 #include <stdio.h>
+
 /**
- *  * main - print prints the alphabet in lowercase, and then in uppercase
- *   *
- *    * Return: 0
- *     */
+ *   main - Displays the whole alphabet in lowercase
+ *    Return: 0 in Succes
+ */
+
 int main(void)
 {
-}
+	char ch = 'a';
+
+	while (ch <= 'z')
+	{
+	putchar(ch);
+	(ch++);
+	}
+	putchar('\n');
+	return (0);
+	}
