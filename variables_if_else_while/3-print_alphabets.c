@@ -1,27 +1,17 @@
 #include <stdio.h>
-
-/**
- *  main - Displays the whole alphabet in lowercase
+/** main - prints the alphabet in lowercase, and upercase
  *
- * Return: 0 in Succes
- *
- * */
-
+ *  Return: 0
+ */
 int main(void)
 {
-		char ch = 'a';
-			char cj = 'A';
+	char chars;
 
-	while (ch <= 'z')
-	{
-	putchar(ch)
-	(ch++);
-}
-	while (cj <= 'Z')
-{
-	putchar(cj);
-	(cj++);
-}
+	for (chars = 97; chars <= 122; chars++)
+		putchar(chars);
+	for (chars = 65; chars <= 90; chars++)
+		putchar(chars);
 	putchar('\n');
 	return (0);
+
 }
