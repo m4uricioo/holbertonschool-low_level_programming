@@ -10,7 +10,7 @@ int main(void)
 	int num = 0;
 
 	for (; num < 10; num++)
-		putchar((num % 10 + '0'); /* base 10 number from 9 to 9 , 0 is not a decimal number*/
+		putchar((num % 10) + '0'); /* base 10 number from 9 to 9 , 0 is not a decimal number*/
 				putchar('\n');
 				return (0);
 				}
