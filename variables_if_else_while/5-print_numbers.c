@@ -10,7 +10,7 @@ int main(void)
 	int num = 0;
 
 	for (; num <= 9; num++)
-		ptintf("%d", num);
+		printf("%d", num);
 	putchar ('\n');
 	return (0);
 }
