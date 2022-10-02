@@ -1,7 +1,8 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
- * more headers goes there
+ * main - assign a random number to the variable n
  *
  * Return:0
  */
