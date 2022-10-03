@@ -1,15 +1,18 @@
 #include "main.h"
 /**
- *  *  print_alphabet_x10 - prints 10 times the alphabet
-  */
+ * print_alphabet_x10 - prints 10 times the alphabet
+ */
 void print_alphabet_x10(void)
 {
 		int alph, time = 0;
-		while (time < 10) /* as it increases it print the alphabet */
+
+		while (time < 10)	/*as it increases it prints the alphabet*/
+		{
 		for (alph = 97; alph <= 122; alph++)
-{
-			_putchar(alph);
-			}
-			time++;
-			_putchar('\n');
+		{
+		_putchar(alph);
+		}
+		time++;
+		_putchar('\n');
+		}
 }
