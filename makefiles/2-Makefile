@@ -1,10 +1,8 @@
-CC=gcc
-SRC= main.c school.c
-#use the reference of ;the variable to translate the list of files, % evaluates the ones that match the requirements
-OBJ= $(SRC:%.c=%.o)
-	NAME= school
-	#pattern rule, $@ destination, $< origin, (automatic variables to substitute names)
-%.o: %.c m.h
-		$(CC) -c -o $@ $<
+CFLAGS = -Wall -pedantic -Werror -Wextra -std=gnu89
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+
 all: $(OBJ)
-		$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
