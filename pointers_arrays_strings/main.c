@@ -1,14 +1,15 @@
-#ifndef MAIN_H
-#define MAIN_H
-/*libreries*/
-#include <stdio.h>
-
-/*prototype*/
-
-int _putchar(char c);
-
 void reset_to_98(int *n);
-
+void print_diagsums(int *a, int size);
+void print_chessboard(char (*a)[8]);
+char *_strstr(char *haystack, char *needle);
+char *_strpbrk(char *s, char *accept);
+unsigned int _strspn(char *s, char *accept);
+char *cap_string(char *);
+void reverse_array(int *a, int n);
+int _strcmp(char *s1, char *s2);
+char *_strcpy(char *dest, char *src);
+void puts_half(char *str);
+void print_rev(char *s);
+int _putchar(char c);
+int _strlen(char *s);
 void swap_int(int *a, int *b);
-
-#endif /*main.h*/
