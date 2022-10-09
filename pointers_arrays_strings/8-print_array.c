@@ -1,32 +1,20 @@
 #include "main.h"
 /**
- *  * puts_half - prints half of a string
- *   *@str: char array string type
- *    */
-void puts_half(char *str)
-{
-	int len = _strlen(str) - 1;	/*string length minus the null charcater*/
-	int n = len / 2;	/*contains half of string*/
-
-	if (n % 2 == 0)		/*if the number is even*/
-{
-	for (n++; str[n]; n++)	/*itera from n+1*/
-{
-	_putchar(str[n]);
-}
-}
-	_putchar('\n');
-}
-/**
-*  * _strlen - returns the length of a string
-*   * @s: pinter to addres os strign
-*    * Return: string length
+*  * print_array - prints n elements of an array of integers
+*   *@a: array of inters *    *@n: number of elements of the array to be printed
 **/
-int _strlen(char *s)
+void print_array(int *a, int n)
 {
-	int count = 0;
+		int i;
 
-	for (; s[count] != '\0'; count++)
-						;
-return (count);
+	for (i = 0; i < n; i++)		/*goes from index 0 to less than total number of element*/
+		{
+	if (i == n - 1)		/*when i equals the last index*/
+{
+	printf("%d", a[i]);
+}
+	else
+	printf("%d, ", a[i]);
+	}
+	printf("\n");
 }
