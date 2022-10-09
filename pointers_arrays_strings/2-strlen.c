@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- *_strlen - retunr lengt of string
- *   * @s: pinter to addres os strign
- */
+*   _strlen - Returns the lenght of the string
+*   * @s: string
+*    * Return: len
+*/
+
 int _strlen(char *s)
 {
 	int i = 0;
