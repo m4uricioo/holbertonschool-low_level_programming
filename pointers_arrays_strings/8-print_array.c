@@ -1,7 +1,8 @@
 #include "main.h"
 /**
 *  * print_array - prints n elements of an array of integers
-*   *@a: array of inters *    *@n: number of e
+*   *@a: array of inters
+*   *@n: number of e
 **/
 void print_array(int *a, int n)
 {
