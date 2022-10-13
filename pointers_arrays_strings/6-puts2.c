@@ -15,11 +15,11 @@ void puts2(char *str)
 	_putchar('\n');
 }
 /**
-* _strlen - returns the length of a string *   * @s: pinter to addres os strign
+* _strlen - returns the length of a string
 * Return: string length
 **/
 
-int _strlen(char *s)
+int _strlen(char *s) /* @s: pinter to addres os strign */
 {
 		int count = 0;
 
