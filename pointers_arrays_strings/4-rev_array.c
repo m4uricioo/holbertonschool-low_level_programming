@@ -2,8 +2,8 @@
 
 /**
 *  reverse_array - inverts the content of an array
-*   @ a: array
-*     @ n: numbers of elements of the array to swap
+*   @a: array
+*     @n: numbers of elements of the array to swap
 **/
 
 void reverse_array(int *a, int n)
