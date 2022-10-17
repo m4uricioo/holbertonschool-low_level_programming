@@ -1,4 +1,5 @@
 int _putchar(char c);
+void _print_rev_recursion(char *s);
 int aux(int num, int guess);
 int is_prime_number(int n);
 int extra(int num, int guess);
