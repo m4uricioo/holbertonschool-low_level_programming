@@ -1,4 +1,5 @@
-/*ime - prints a name.
+/**
+  * print_name - prints a name.
   * @name: String which is the name.
   * @f: Function pointer to uppercase name function or as passed name.
   *
