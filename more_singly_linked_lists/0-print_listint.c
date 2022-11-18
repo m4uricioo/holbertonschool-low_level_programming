@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * print_listint - print all the elements of a list
  * @h: pinter head
