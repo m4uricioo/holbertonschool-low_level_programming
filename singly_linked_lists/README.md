@@ -17,7 +17,7 @@ You have to start somewhere, so we give the address of the first node a special 
 Linked lists can be of multiple types: singly, doubly, and circular linked list. In this article, we will focus on the singly linked list
 
 
-Representation of Linked List
+# Representation of Linked List
 Let's see how each node of the linked list is represented. Each node consists:
 
 A data item
@@ -32,12 +32,13 @@ struct node
 };
 
 
-Understanding the structure of a linked list node is the key to having a grasp on it.
+
+# Understanding the structure of a linked list node is the key to having a grasp on it.
 
 Each struct node has a data item and a pointer to another struct node. Let us create a simple Linked List with three items to understand how this works.
 
 
-/* Initialize nodes */
+# /* Initialize nodes */
 
 struct node *head;
 
@@ -51,7 +52,7 @@ struct node *three = NULL;
 
 
 
-/* Allocate memory */
+# /* Allocate memory */
 
 one = malloc(sizeof(struct node));
 
@@ -62,7 +63,7 @@ three = malloc(sizeof(struct node));
 
 
 
-/* Assign data values */
+# /* Assign data values */
 
 one->data = 1;
 
@@ -72,7 +73,7 @@ three->data=3;
 
 
 
-/* Connect nodes */
+# /* Connect nodes */
 
 one->next = two;
 
@@ -81,7 +82,7 @@ two->next = three;
 three->next = NULL;
 
 
-/* Save address of first node in head */
+# /* Save address of first node in head */
 
 head = one;
 
@@ -89,8 +90,8 @@ head = one;
 If you didn't understand any of the lines above, all you need is a refresher on pointers and structs.
 
 
-I
-n just a few steps, we have created a simple linked list with three nodes.
+
+In just a few steps, we have created a simple linked list with three nodes.
 
 representing linked list by connecting each node with next node using address of next node
 Linked list Representation
