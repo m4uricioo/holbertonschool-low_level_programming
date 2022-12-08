@@ -1,36 +1,44 @@
-#include "main.h"
-/**
- * _calloc - allocates memory for a data type
- * @nmemb: number of elementsi of a data type
- * @size: data type size
- *
- * Return: empty pointer to the allocated memory block
- */
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	char *arrl = NULL;
+#include <stdlib.h>
 
-	if (!nmemb || !size)	/*If nmemb or size is 0, then _calloc returns NULL*/
-		return (arrl);
-	arrl = malloc(nmemb * size);
-	if (!arrl)	/*If nmemb or size is 0, then _calloc returns NULL*/
+/**
+ * string_nconcat - Concatenate two strings using n amount of s2
+ * @s1: First string
+ * @s2: String to add to end of s1
+ * @n: Amount of s2 to add to s1
+ *
+ * Return: pointer to new area in memory, NULL if it fails
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	char *nstr, *empt;
+	unsigned int i, len, j;
+	unsigned int size;
+
+	len = 0;
+	empt = "";
+	if (s1 == NULL)
+		s1 = empt;
+	if (s2 == NULL)
+		s2 = empt;
+	while (s1[len] != '\0')
+		len++;
+	size = (len + n) * sizeof(*nstr);
+	nstr = malloc(size + 1);
+	if (nstr == NULL)
 		return (NULL);
-	arrl = _memset(arrl, 0, (size * nmemb)); /*calloc sets the allocated memory to zero*/
-	return (arrl);
-}
-/**
- * _memset - fills memory with a constant byte
- * @s: pointer to the array address
- * @b: is the added constant character or bytes
- * @n: the constant number of bytes b
- *
- * Return: returns the initial position of the array
- */
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i = 0;
-
-	for (i = 0; i < n; i++)
-		s[i] = b;
-	return (s);
+	i = 0;
+	while (i < size && s1[i] != '\0')
+	{
+		nstr[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (i < size && s2[j] != '\0')
+	{
+		nstr[i] = s2[j];
+		i++;
+		j++;
+	}
+	nstr[i] = '\0';
+	return (nstr);
 }
